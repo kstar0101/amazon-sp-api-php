@@ -46,7 +46,7 @@ class RemovalShipmentEvent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+        'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'order_id' => 'string',
 'transaction_type' => 'string',
 'removal_shipment_item_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\RemovalShipmentItemList',    ];
@@ -204,7 +204,7 @@ class RemovalShipmentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getPostedDate()
     {
@@ -214,7 +214,7 @@ class RemovalShipmentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $posted_date posted_date
      *
      * @return $this
      */

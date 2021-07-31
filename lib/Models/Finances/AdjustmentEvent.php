@@ -47,7 +47,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'adjustment_type' => 'string',
-'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'adjustment_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
 'adjustment_item_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\AdjustmentItemList',    ];
 
@@ -228,7 +228,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getPostedDate()
     {
@@ -238,7 +238,7 @@ class AdjustmentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $posted_date posted_date
      *
      * @return $this
      */

@@ -48,7 +48,7 @@ class TrialShipmentEvent implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'amazon_order_id' => 'string',
 'financial_event_group_id' => 'string',
-'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'sku' => 'string',
 'fee_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\FeeComponentList',    ];
 
@@ -258,7 +258,7 @@ class TrialShipmentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getPostedDate()
     {
@@ -268,7 +268,7 @@ class TrialShipmentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $posted_date posted_date
      *
      * @return $this
      */

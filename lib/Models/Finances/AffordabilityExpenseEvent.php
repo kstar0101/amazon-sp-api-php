@@ -47,7 +47,7 @@ class AffordabilityExpenseEvent implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'amazon_order_id' => 'string',
-'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'marketplace_id' => 'string',
 'transaction_type' => 'string',
 'base_expense' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
@@ -268,7 +268,7 @@ class AffordabilityExpenseEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getPostedDate()
     {
@@ -278,7 +278,7 @@ class AffordabilityExpenseEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $posted_date posted_date
      *
      * @return $this
      */

@@ -48,8 +48,8 @@ class DebtRecoveryItem implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'recovery_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
 'original_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
-'group_begin_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
-'group_end_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',    ];
+'group_begin_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
+'group_end_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -252,7 +252,7 @@ class DebtRecoveryItem implements ModelInterface, ArrayAccess
     /**
      * Gets group_begin_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getGroupBeginDate()
     {
@@ -262,7 +262,7 @@ class DebtRecoveryItem implements ModelInterface, ArrayAccess
     /**
      * Sets group_begin_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $group_begin_date group_begin_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $group_begin_date group_begin_date
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class DebtRecoveryItem implements ModelInterface, ArrayAccess
     /**
      * Gets group_end_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getGroupEndDate()
     {
@@ -286,7 +286,7 @@ class DebtRecoveryItem implements ModelInterface, ArrayAccess
     /**
      * Sets group_end_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $group_end_date group_end_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $group_end_date group_end_date
      *
      * @return $this
      */

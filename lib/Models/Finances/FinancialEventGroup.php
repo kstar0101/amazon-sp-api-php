@@ -51,12 +51,12 @@ class FinancialEventGroup implements ModelInterface, ArrayAccess
 'fund_transfer_status' => 'string',
 'original_total' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
 'converted_total' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
-'fund_transfer_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+'fund_transfer_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'trace_id' => 'string',
 'account_tail' => 'string',
 'beginning_balance' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
-'financial_event_group_start' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
-'financial_event_group_end' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',    ];
+'financial_event_group_start' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
+'financial_event_group_end' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -366,7 +366,7 @@ class FinancialEventGroup implements ModelInterface, ArrayAccess
     /**
      * Gets fund_transfer_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getFundTransferDate()
     {
@@ -376,7 +376,7 @@ class FinancialEventGroup implements ModelInterface, ArrayAccess
     /**
      * Sets fund_transfer_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $fund_transfer_date fund_transfer_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $fund_transfer_date fund_transfer_date
      *
      * @return $this
      */
@@ -462,7 +462,7 @@ class FinancialEventGroup implements ModelInterface, ArrayAccess
     /**
      * Gets financial_event_group_start.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getFinancialEventGroupStart()
     {
@@ -472,7 +472,7 @@ class FinancialEventGroup implements ModelInterface, ArrayAccess
     /**
      * Sets financial_event_group_start.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $financial_event_group_start financial_event_group_start
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $financial_event_group_start financial_event_group_start
      *
      * @return $this
      */
@@ -486,7 +486,7 @@ class FinancialEventGroup implements ModelInterface, ArrayAccess
     /**
      * Gets financial_event_group_end.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getFinancialEventGroupEnd()
     {
@@ -496,7 +496,7 @@ class FinancialEventGroup implements ModelInterface, ArrayAccess
     /**
      * Sets financial_event_group_end.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $financial_event_group_end financial_event_group_end
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $financial_event_group_end financial_event_group_end
      *
      * @return $this
      */

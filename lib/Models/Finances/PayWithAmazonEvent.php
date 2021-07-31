@@ -47,7 +47,7 @@ class PayWithAmazonEvent implements ModelInterface, ArrayAccess
      */
     protected static $swaggerTypes = [
         'seller_order_id' => 'string',
-'transaction_posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+'transaction_posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'business_object_type' => 'string',
 'sales_channel' => 'string',
 'charge' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\ChargeComponent',
@@ -264,7 +264,7 @@ class PayWithAmazonEvent implements ModelInterface, ArrayAccess
     /**
      * Gets transaction_posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getTransactionPostedDate()
     {
@@ -274,7 +274,7 @@ class PayWithAmazonEvent implements ModelInterface, ArrayAccess
     /**
      * Sets transaction_posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $transaction_posted_date transaction_posted_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $transaction_posted_date transaction_posted_date
      *
      * @return $this
      */

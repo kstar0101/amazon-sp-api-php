@@ -46,7 +46,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+        'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'transaction_type' => 'string',
 'invoice_id' => 'string',
 'base_value' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
@@ -216,7 +216,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getPostedDate()
     {
@@ -226,7 +226,7 @@ class ProductAdsPaymentEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $posted_date posted_date
      *
      * @return $this
      */

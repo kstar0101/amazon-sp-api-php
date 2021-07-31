@@ -55,7 +55,7 @@ class SolutionProviderCreditEvent implements ModelInterface, ArrayAccess
 'provider_id' => 'string',
 'provider_store_name' => 'string',
 'transaction_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
-'transaction_creation_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',    ];
+'transaction_creation_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -456,7 +456,7 @@ class SolutionProviderCreditEvent implements ModelInterface, ArrayAccess
     /**
      * Gets transaction_creation_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getTransactionCreationDate()
     {
@@ -466,7 +466,7 @@ class SolutionProviderCreditEvent implements ModelInterface, ArrayAccess
     /**
      * Sets transaction_creation_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $transaction_creation_date transaction_creation_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $transaction_creation_date transaction_creation_date
      *
      * @return $this
      */

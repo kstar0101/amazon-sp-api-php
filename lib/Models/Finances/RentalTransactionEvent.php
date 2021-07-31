@@ -49,7 +49,7 @@ class RentalTransactionEvent implements ModelInterface, ArrayAccess
         'amazon_order_id' => 'string',
 'rental_event_type' => 'string',
 'extension_length' => 'int',
-'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'rental_charge_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\ChargeComponentList',
 'rental_fee_list' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\FeeComponentList',
 'marketplace_name' => 'string',
@@ -312,7 +312,7 @@ class RentalTransactionEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getPostedDate()
     {
@@ -322,7 +322,7 @@ class RentalTransactionEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $posted_date posted_date
      *
      * @return $this
      */

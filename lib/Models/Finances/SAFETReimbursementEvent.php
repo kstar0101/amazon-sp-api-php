@@ -46,7 +46,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\DateTime',
+        'posted_date' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\\Date',
 'safet_claim_id' => 'string',
 'reimbursed_amount' => '\ClouSale\AmazonSellingPartnerAPI\Models\Finances\Currency',
 'reason_code' => 'string',
@@ -210,7 +210,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
     /**
      * Gets posted_date.
      *
-     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime
+     * @return \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date
      */
     public function getPostedDate()
     {
@@ -220,7 +220,7 @@ class SAFETReimbursementEvent implements ModelInterface, ArrayAccess
     /**
      * Sets posted_date.
      *
-     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\DateTime $posted_date posted_date
+     * @param \ClouSale\AmazonSellingPartnerAPI\Models\Finances\Date $posted_date posted_date
      *
      * @return $this
      */
